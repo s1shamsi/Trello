@@ -1,0 +1,191 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+}
+
+.input-container {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.img-container {
+  float: right;
+}
+
+.img-container img {
+  max-width: 130px;
+} 
+
+
+
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.input-row label {
+  font-size: 14px;
+  font-weight: bold;
+  width: 120px; /* Set a fixed width for the labels */
+}
+
+.input-row input[type="text"],
+.input-row input[type="number"],
+.input-row textarea,
+.input-row select {
+  padding: 4px 6px; /* Reduce padding to make textboxes smaller */
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 12px; /* Reduce font size to make textboxes smaller */
+  flex: 1; /* Allow the input elements to expand and take the remaining space */
+}
+
+/* Hover and focus styles for textboxes */
+.input-row input[type="text"]:hover,
+.input-row input[type="number"]:hover,
+.input-row textarea:hover,
+.input-row select:hover {
+  border-color: #555;
+}
+
+.input-row input[type="text"]:focus,
+.input-row input[type="number"]:focus,
+.input-row textarea:focus,
+.input-row select:focus {
+  border-color: #0074D9;
+  outline: none;
+}
+.header {
+  margin-bottom: 20px;
+}
+
+#project-title {
+  margin-right: 10px;
+}
+
+#project-display {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; /* Add the desired background color */
+  padding: 20px; /* Increase padding for a bigger container */
+}
+
+.table-container table {
+  width: 32%; /* Increase width for a wider table */
+  border-collapse: collapse;
+}
+
+.table-container th {
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.table-container caption {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px;
+  background-color: #224264; 
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-container td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-id {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin-top: 5px;
+}
+
+.card-info {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.card-info-entry {
+  display: flex;
+  align-items: center;
+}
+
+.card-info-entry .entry-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.card-info-entry .entry-value {
+  flex: 1;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding to make the button smaller */
+  font-size: 16px; /* Adjust font size to make the text smaller */
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px; /* Add rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific button styles with different colors */
+.button-green {
+  background-color: #4CAF50; /* Green color */
+}
+
+.button-blue {
+  background-color: #0074D9; /* Blue color */
+}
+
+.button-red {
+  background-color: #FF4136; /* Red color */
+}
+
+.button-yellow {
+  background-color: #FFDC00; /* Yellow color */
+}
+
+/* Hover effect for all buttons */
+.button:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
